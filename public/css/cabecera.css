@@ -19,7 +19,8 @@
     height: fit-content;
     margin-top:  -15px;
 }
-.navegacion button
+/*.navegacion button*/
+.navegacion a
 {
     width: fit-content;
     text-align: right;
