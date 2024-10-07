@@ -12,7 +12,7 @@
         <!-- Font Awesome -->
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@400;700&display=swap" rel="stylesheet">
-
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
         <!-- Styles -->
         <style>
@@ -62,20 +62,9 @@
                 color:white;
                /* O 'fixed' si deseas que permanezca en la pantalla */
                 z-index: 1000;
-                /*
-                position: absolute;
-                left: 0;
-                background: var(--fondo-gris-oscuro);
-                color: var(--blanco);
-                border-radius: 10px;
-                padding: 0;
-                list-style: none;
-                margin: 0;
-                border: 2px solid #fafafa10;
-                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);*/
             }
-            .menu-boton-desplegar { /* Espacio a la derecha para separarlo del menú */ /* Ajusta la altura según sea necesario */
-                    box-sizing: border-box; /* Evitar cambios de ancho al hacer clic */
+            .menu-boton-desplegar {  
+                    box-sizing: border-box; 
                     border:none;
                     display:flex;
                     align-items: flex-start;
@@ -86,7 +75,7 @@
                 }
 
             .menu-boton-desplegar:active {
-                transform: scale(0.95); /* Reduce ligeramente el tamaño al hacer clic */
+                transform: scale(0.95); 
                 transition: transform 0.1s; /* Transición suave */
             }
 
@@ -100,7 +89,7 @@
                 .menu-lista li a {
                     text-decoration: none;
                     color: white; /* Cambia el color del texto a blanco */
-                    font-family: 'Arial', sans-serif; /* Cambia la fuente */ /* Añade un poco de padding para hacer más grande el área clickeable */
+                    font-family: 'Poppins', sans-serif; /* Cambia la fuente */ /* Añade un poco de padding para hacer más grande el área clickeable */
                     display: block; /* Asegura que el área clickeable ocupe todo el ancho */
                     font-size:1.2rem;
                     margin-bottom: 8px;
@@ -179,6 +168,10 @@
                 .text-white {
                     font-size: 1.2rem; /* Texto más pequeño en pantallas móviles */
                 }
+
+                .menu-lista li a{
+                    font-size:0.8rem;
+                }
                 
             }
             @media (min-width: 768px) {
@@ -208,7 +201,6 @@
                     }
 
                     .menu li {
-                        padding: 10px 20px;
                         border: none;
                     }
 
@@ -225,19 +217,6 @@
     </head>
     <body class="antialiased">
         <div class="relative sm:flex sm:justify-center sm:items-center min-h-screen bg-dots-darker bg-center bg-gray-100 dark:bg-dots-lighter dark:bg-gray-900 selection:bg-red-500 selection:text-white">
-            @if (Route::has('login'))
-                <div class="sm:fixed sm:top-0 sm:right-0 p-6 text-right z-10">
-                    @auth
-                        <a href="{{ url('/home') }}" class="font-semibold text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500">Home</a>
-                    @else
-                        <a href="{{ route('login') }}" class="font-semibold text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500">Log in</a>
-
-                        @if (Route::has('register'))
-                            <a href="{{ route('register') }}" class="ml-4 font-semibold text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500">Register</a>
-                        @endif
-                    @endauth
-                </div>
-            @endif
 
             <div class="max-w-7xl mx-auto p-6 lg:p-8">
                 <x-header />

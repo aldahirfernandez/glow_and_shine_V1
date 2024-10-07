@@ -8,7 +8,7 @@
     <!-- Menú desplegable -->
     <ul class="menu-lista absolute hidden bg-white text-white z-10">
         <li><a class="text-white" href="/"><i class="fa-solid fa-house"></i>Inicio</a></li>
-        <li><a class="text-white " href="/"><i class="fa-solid fa-users"></i>Nosotros</a></li>
+        <li><a class="text-white" href="/"><i class="fa-solid fa-users"></i>Nosotros</a></li>
         <li><a class="text-white" href="/"><i class="fa-solid fa-th-list"></i>Categorías</a></li>
         <li><a class="text-white" href="/"><i class="fa-solid fa-phone"></i>Contáctanos</a></li>
         <li><a class="text-white" href="/"><i class="fa-solid fa-sign-in-alt"></i>Iniciar sesión</a></li>
@@ -23,7 +23,7 @@
         const menuList = document.querySelector('.menu-lista');
 
         menuButton.addEventListener('click', function() {
-            menuList.classList.toggle('hidden'); // Alternar visibilidad del menú
+            menuList.classList.toggle('hidden'); 
             menuList.classList.toggle('bg-pink-500'); 
         });
     });
