@@ -1,0 +1,64 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.container_card {
+    background-color: #764C73;
+    max-width: 600px;
+    padding: 20px;
+}
+
+.review_card {
+    background-color: rgb(232, 232, 232);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    max-width: 600px;
+    overflow: hidden;
+    transition: transform 0.5s ease;
+}
+
+.review_card:hover {
+    transform: scale(1.05);
+}
+
+.review_card img {
+    width: 200px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.review_text {
+    padding-left: 20px;
+    
+}
+
+.review_text p {
+    font-size: 1rem;
+}
+
+.stars {
+    color: orange;
+    font-size: 50px;
+    margin-right: 5px;
+}
+
+@media(max-width: 500px) {
+    .review_text p {
+        font-size: 0.5rem;
+    }
+
+    .stars {
+        font-size: 30px;
+    }
+
+    .review_card img {
+        width: 100px;
+    }
+}
+
