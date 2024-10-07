@@ -21,15 +21,16 @@
        
 
         <x-Aldahir.Banner/>
-
-        <div class="category_scroll">
-            <!-- Repetir el componente 5 veces -->
-            @for ($i = 0; $i < 7; $i++)
-                <x-Aldahir.CategoryButton>
-                    Category {{ $i + 1 }}
-                </x-Aldahir.CategoryButton>
-            @endfor
-        </div>
+        <a href="/catalogo">
+            <div class="category_scroll">
+                <!-- Repetir el componente 5 veces -->
+                @for ($i = 0; $i < 7; $i++)
+                    <x-Aldahir.CategoryButton>
+                        Category {{ $i + 1 }}
+                    </x-Aldahir.CategoryButton>
+                @endfor
+            </div>
+        </a>
 
         <div class="container_section_general">
             <x-Aldahir.TSubtitle>
