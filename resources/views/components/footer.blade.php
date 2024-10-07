@@ -30,7 +30,6 @@
                 </a>
 
 
-
             </div>
             <a href="#" class="text-pink-600">¿Preguntas frecuentes?</a>
         </div>
