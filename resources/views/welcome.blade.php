@@ -21,7 +21,7 @@
             }
 
             .bg-pink-500 {
-                background-color: #ec4899;
+                background-color: #BE6C97;
                 height: 9vh; /* Altura completa de la pantalla */
                 display: flex;
                 justify-content: space-between; /* Centrar horizontalmente */
@@ -111,7 +111,7 @@
                 font-size: 2rem; /* Ajusta el tamaño del texto */
             }
             .footer {
-                background-color: #f8d8e1; /* Color de fondo */
+                background-color: #FEE9FF; /* Color de fondo */
                  /* Espaciado interno */
                 text-align: left; /* Alineación del texto */
             }
@@ -123,7 +123,7 @@
             }
 
             .footer h3 {
-                color: #b8567f; /* Color del título */
+                color: #BE6C97; /* Color del título */
                 font-weight: bold;
             }
 
@@ -133,7 +133,7 @@
             }
 
             .footer ul li a {
-                color: #b8567f; /* Color de los enlaces */
+                color: #764C73; /* Color de los enlaces */
                 text-decoration: none;
             }
 
@@ -142,7 +142,7 @@
             }
             .contact {
                 text-align: center;
-                background-color: #f8d7da; /* Rosa claro de fondo */
+                background-color: #FEE9FF; /* Rosa claro de fondo */
                 padding: 13px;
                 font-family: Arial, sans-serif;
             }
@@ -151,7 +151,7 @@
                 display: inline-block;
                 margin: 7px;
                 text-decoration: none;
-                color: #ff69b4; /* Color rosa */
+                color: #764C73; /* Color rosa */
             }
 
             .social-icon i {
@@ -222,11 +222,7 @@
                 <x-header />
                 
                 
-                <div class="flex justify-center mt-16 px-0 sm:items-center sm:justify-between">
-                    <div class="text-center text-sm sm:text-left">
-                        &nbsp;
-                    </div>
-                </div>
+                
 
                 <x-footer />
 

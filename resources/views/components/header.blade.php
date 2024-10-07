@@ -9,8 +9,6 @@
     <!-- Include the Navbar component -->
     @include('components.navbar')
 
-    <!-- Menu icon (Hamburguesa) -->
-
 </div>
 <!--
 
