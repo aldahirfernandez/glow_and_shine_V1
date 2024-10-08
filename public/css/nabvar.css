@@ -75,3 +75,35 @@ position: relative; /* Para crear un contexto de apilamiento */
     color: #ffffff;
     font-size: 2rem; /* Ajusta el tamaño del texto */
 }
+@media (max-width: 640px) {
+    .text-white {
+        font-size: 1.2rem; /* Texto más pequeño en pantallas móviles */
+    }
+
+    .menu-lista li a{
+        font-size:0.8rem;
+    }
+    
+}
+
+@media screen and (min-width: 768px) {
+        .menu {
+            position: static;
+            display: flex;
+            background-color: transparent;
+            width: auto;
+            border: none;
+        }
+
+        .menu li {
+            border: none;
+        }
+
+        .menu li a {
+            color: white;
+        }
+
+        .menu-button {
+            display: none; /* Ocultar el botón de hamburguesa en pantallas grandes */
+        }
+    }

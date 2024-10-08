@@ -50,3 +50,21 @@
     transform: scale(1.2); /* Efecto hover de agrandar */
     color: #ff1493; /* Color rosa más fuerte al hacer hover */
 }
+
+@media (min-width: 768px) {
+    .footer .container{
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start; /* Alineación vertical */
+        padding: 20px;
+    }
+    .footer h3 {
+        font-size: 2rem; /* Ajusta este valor según lo que necesites */
+    }
+    .footer li{
+        font-size: 1.2rem;
+    }
+    .social-icon i {
+        font-size: 3rem;
+    }
+}

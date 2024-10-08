@@ -14,3 +14,15 @@
 .titulo {
     font-family: 'Arima Madurai', cursive;
 }
+.text-white {
+
+    color: #ffffff;
+    font-size: 2rem; /* Ajusta el tamaño del texto */
+}
+
+@media (max-width: 640px) {
+    .text-white {
+        font-size: 1.2rem; /* Texto más pequeño en pantallas móviles */
+    }
+
+}

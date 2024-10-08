@@ -34,6 +34,7 @@
     @include('components.navbar')
 
 </div>
+@stack('scripts')
 </body>
 <!--
 
