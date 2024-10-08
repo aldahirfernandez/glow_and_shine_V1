@@ -40,7 +40,7 @@ class ComponentsController extends Controller
         return view('components.TSubtitle');
     }
 
-    public function PartCris() {
-        return view ('components.PartCris');
+    public function Footer() {
+        return view('components.Aldahir.Footer');
     }
 }

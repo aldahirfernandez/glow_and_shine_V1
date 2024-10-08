@@ -9,6 +9,7 @@ use App\Http\Controllers\catalogoController;
 
 
 Route::get('/', [HomeController::class, 'principal']);
+Route::get('/footer', [ComponentsController::class, 'Footer']);
 
 Route::view('/contactanos', 'contactanos');
 Route::get('/inicio_sesion', inicioSesionController::class);
