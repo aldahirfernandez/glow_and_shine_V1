@@ -1,0 +1,16 @@
+.hidden {
+    display: none;
+}
+
+.bg-pink-500 {
+    background-color: #BE6C97;
+    height: 9vh; /* Altura completa de la pantalla */
+    display: flex;
+    justify-content: space-between; /* Centrar horizontalmente */
+    padding-top: 20px;
+    align-items: flex-start; /* Centrar verticalmente */
+}
+
+.titulo {
+    font-family: 'Arima Madurai', cursive;
+}

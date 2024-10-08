@@ -1,0 +1,52 @@
+.footer {
+    background-color: #FEE9FF; /* Color de fondo */
+     /* Espaciado interno */
+    text-align: left; /* Alineación del texto */
+}
+.footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Alineación vertical */
+    padding: 20px;
+}
+
+.footer h3 {
+    color: #BE6C97; /* Color del título */
+    font-weight: bold;
+}
+
+.footer ul {
+    list-style-type: none; /* Sin viñetas */
+    padding: 0;
+}
+
+.footer ul li a {
+    color: #764C73; /* Color de los enlaces */
+    text-decoration: none;
+}
+
+.footer ul li a:hover {
+    text-decoration: underline;
+}
+.contact {
+    text-align: center;
+    background-color: #FEE9FF; /* Rosa claro de fondo */
+    padding: 13px;
+    font-family: Arial, sans-serif;
+}
+
+.social-icon {
+    display: inline-block;
+    margin: 7px;
+    text-decoration: none;
+    color: #764C73; /* Color rosa */
+}
+
+.social-icon i {
+    transition: transform 0.3s ease;
+}
+
+.social-icon i:hover {
+    transform: scale(1.2); /* Efecto hover de agrandar */
+    color: #ff1493; /* Color rosa más fuerte al hacer hover */
+}
