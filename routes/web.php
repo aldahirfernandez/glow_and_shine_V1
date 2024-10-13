@@ -17,6 +17,12 @@ use App\Http\Controllers\perfilUsuarioController;
 
 Route::get('/',[perfilUsuarioController::class, 'perfilUsuario']);
 
+
+
+Route::get('/editarPerfil',[perfilUsuarioController::class, 'editar_perfil_usuario']);
+
+Route::get('/p',[perfilUsuarioController::class, 'p']);
+
 /* Route::get('/', function () {
     return view('welcome');
 }); */
