@@ -15,7 +15,7 @@
     <h2 class="texto_categoria">Maquillaje</h2>
     <div class="contenedor_catalogo">
         @foreach($productos as $producto)
-        <x-Mikaela.tarjetaProducto :producto="$producto" />
+        <x-tarjetaProducto :producto="$producto" />
         @endforeach
     </div>
 </body>

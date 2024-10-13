@@ -46,7 +46,7 @@
 @media (min-width: 769px) {
     .contenedor_nombre_producto_especifico {
         position: absolute;
-        top: 20%;
+        top: 0%;
         right: 10%;
         width: 40%;
         display: flex;

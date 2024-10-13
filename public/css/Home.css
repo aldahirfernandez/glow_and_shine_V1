@@ -23,7 +23,7 @@
     overflow-x: auto; /* Habilitar el desplazamiento horizontal */
     padding: 10px; /* Espacio interno */
     /*white-space: nowrap; /* Evitar que los botones se rompan */
-    max-width: 100%;
+    max-width: 100vh;
     gap: 20px;
 }
 

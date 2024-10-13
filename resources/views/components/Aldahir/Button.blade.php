@@ -15,7 +15,7 @@
 
 <body>
     <div class="container_button">
-        <a href="inicio_sesion" class="my_button">{{ $slot?? 'Button' }}</a>  
+        <a href="account/login" class="my_button">{{ $slot?? 'Button' }}</a>  
     </div>
     
 </body>

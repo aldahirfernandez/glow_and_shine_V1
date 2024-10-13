@@ -11,9 +11,9 @@
 </head>
 <body>
     <!-- <x-imagenProducto/> -->
-    <x-Mikaela.imagenProducto :producto="$producto" />
-    <x-Mikaela.nombreProductoConBoton :producto="$producto" />
-    <x-Mikaela.seleccionarTonos :producto="$producto"/>
-    <x-Mikaela.calificaProducto/>
+    <x-imagenProducto :producto="$producto"/>
+    <x-nombreProductoConBoton :producto="$producto" />
+    <x-seleccionarTonos :producto="$producto"/>
+    <x-calificaProducto/>
 </body>
 </html>

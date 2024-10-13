@@ -7,5 +7,16 @@ body
     height: 100%;
     display: flex;
     flex-direction: column;
-    background-color: #FEE9FF;
+    background-color: var(--Blanco);
+
+}
+
+:root
+{
+    --Rosado_clarito:#FEE9FF;
+    --Blanco:#fff;
+    --Negro:#000;
+    --Rosado_principal: #BE6C97;
+    --Morado: #764C73;
+    
 }
