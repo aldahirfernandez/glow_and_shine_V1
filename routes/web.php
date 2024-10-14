@@ -16,6 +16,8 @@ use App\Http\Controllers\perfilUsuarioController;
 */
 
 Route::get('/',[perfilUsuarioController::class, 'perfilUsuario']);
+Route::get('/perfilEmpleado',[perfilUsuarioController::class, 'perfilEmpleado']);
+Route::get('/perfilAdministrador',[perfilUsuarioController::class, 'perfilAdministrador']);
 
 
 

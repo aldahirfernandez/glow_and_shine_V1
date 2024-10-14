@@ -13,6 +13,16 @@ class perfilUsuarioController extends Controller
         return view('perfilUsuario');
 
     }
+    public function perfilEmpleado()
+    {
+        return view('perfilEmpleado');
+
+    }
+    public function perfilAdministrador()
+    {
+        return view('perfilAdministrador');
+
+    }
     
 
     public function editar_perfil_usuario()
