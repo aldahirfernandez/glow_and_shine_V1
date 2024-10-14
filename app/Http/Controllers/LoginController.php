@@ -26,15 +26,20 @@ class LoginController extends Controller
             if(request() -> user()->role === 'admin')
             {
                 return redirect()->intended(route('account.dashboardAdmin'));
-            }
-    
-            return redirect()->intended(route('account.dashboard', absolute: false));
-       
-                    
-                }else{
-                    return redirect()->route('account.login')->with('Email o password incorrectos');
+            }   
+                else
+                {
+                    if(request() -> user()->role === 'empleado')
+                    {
+                        return redirect()->intended(route('account.dashboardEmpleado'));
+                    }
+                else   
+                    {
+                        return redirect()->intended(route('account.dashboard', absolute: false));
+                    }
                 }
-
+                return redirect()->route('account.login')->with('Email o password incorrectos');
+            }
         }else{
             return redirect()->route('account.login')
             ->withInput()

@@ -33,8 +33,8 @@
                 <li><a href="contact">Contactanos</a></li>
             </ul>
             <div>
-                <a href="#" class="action_btn">Iniciar Sesion</a>
-                <a href="#" class="action_btn">Registrarse</a>
+                <a href="login" class="action_btn">Iniciar Sesion</a>
+                <a href="register" class="action_btn">Registrarse</a>
             </div>
             <div class="toggle_btn">
                 <i class="fa-solid fa-bars"></i>
@@ -46,8 +46,8 @@
             <li><a href="about">Nosotros</a></li>
             <li><a href="category">Categoria</a></li>
             <li><a href="contact">Contactanos</a></li>
-            <li><a href="#" class="action_btn">Iniciar Sesion</a></li>
-            <li><a href="#" class="action_btn">Registrarse</a></li>
+            <li><a href="login" class="action_btn">Iniciar Sesion</a></li>
+            <li><a href="register" class="action_btn">Registrarse</a></li>
         </div>
     </header>
 

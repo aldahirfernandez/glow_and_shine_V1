@@ -13,3 +13,8 @@
     max-width: 500px;
 }
 
+@media (min-width: 700px) {
+    .direccion {
+        margin-right: 50px;
+    }
+}

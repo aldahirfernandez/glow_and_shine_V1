@@ -1,10 +1,7 @@
-<link rel="stylesheet" href="css/formu.css">
-<head>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-</head>
+<link rel="stylesheet" href="\css\formularioRegistro.css">
 
-<div class="form_registro"  >
-    <form action="{{route('account.processRegistration')}}" method="POST" class="form">
+<div class="contenedor_formulario_registro">
+    <form class="formulario_registro" action="{{route('account.processRegistration')}}" method="POST">
             @csrf
             <input type="name" id="name" name="name" placeholder="Nombre de Usuario" required>
             @error('name')
@@ -22,8 +19,6 @@
             @error('password')
             <p class="invalid-feedback">{{$message}}</p>
             @enderror
-            <button type="submit">Registrar</button>
-            
+            <button type="submit">Registrar</button>        
     </form>
-    
 </div>

@@ -1,6 +1,7 @@
 <link rel="stylesheet" href="\css\formularioContactanos.css">
 <div class="contenedor_formulario_contactanos">
     <h3 class="texto_contactanos">¿Tienes alguna consulta?</h3>
+    <br/>
     <form class="formulario" action="https://formspree.io/f/mpwzawzw" method="POST">
         <label for="nombre">Nombre Completo</label>
         <input type="text" id="nombre" name="nombre">

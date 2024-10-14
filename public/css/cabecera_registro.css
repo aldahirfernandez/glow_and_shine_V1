@@ -30,7 +30,7 @@
 }
 .uno
 {
-    background-color: #764C73;
+    background-color: #C9A8CB;
     padding: 15px 20px;
     margin-right: -45px;
     z-index: 2;
@@ -39,6 +39,6 @@
 .dos
 {
     z-index: 1;
-    background-color: #C9A8CB;
+    background-color: var(--Morado);
     padding: 15px 20px 15px 50px;
 }
