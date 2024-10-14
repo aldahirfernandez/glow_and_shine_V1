@@ -2,7 +2,7 @@
 
 <x-app-layout>
     <section class="container_perfil_usuario">
-        <x-Claudia.encabezadoPerfil/>
+        <x-Claudia.encabezadoPerfil :saludo="$saludo" />
         <x-Claudia.formularioEditarInfo/>
         
         

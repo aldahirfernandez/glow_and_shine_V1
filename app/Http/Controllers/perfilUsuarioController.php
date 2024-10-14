@@ -44,7 +44,8 @@ class perfilUsuarioController extends Controller
 
     public function editar_perfil_usuario()
     {
-        return view('editarPerfilUsuario');
+        $saludo = 'Edita tu información';
+        return view('editarPerfilUsuario',compact('saludo'));
 
     }
 
