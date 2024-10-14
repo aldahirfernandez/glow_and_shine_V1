@@ -14,9 +14,49 @@ class catalogoController extends Controller
             ->select('producto.*', 'imagen_producto.direccion_imagen')
             ->get();
         
-        return view('catalogo', ['productos' => $productosMaquillaje]);
+        return view('Maquillaje', ['productos' => $productosMaquillaje]);
     }
 
+    public function mostrarCatalogoJoyeria() {
+        $productosJoyeria = DB::table('producto')
+            ->join('imagen_producto', 'producto.id_imagen_producto', '=', 'imagen_producto.id_imagen_producto')
+            ->where('producto.categoria', 'Joyeria')
+            ->select('producto.*', 'imagen_producto.direccion_imagen')
+            ->get();
+        
+        return view('Joyeria', ['productos' => $productosJoyeria]);
+    }
+
+
+    public function mostrarCatalogoSkinCare() {
+        $productosSkinCare = DB::table('producto')
+            ->join('imagen_producto', 'producto.id_imagen_producto', '=', 'imagen_producto.id_imagen_producto')
+            ->where('producto.categoria', 'Skincare')
+            ->select('producto.*', 'imagen_producto.direccion_imagen')
+            ->get();
+        
+        return view('Skincare', ['productos' => $productosSkinCare]);
+    }
+
+    public function mostrarCatalogoCuidadoCapilar() {
+        $productosCuidadoCapilar = DB::table('producto')
+            ->join('imagen_producto', 'producto.id_imagen_producto', '=', 'imagen_producto.id_imagen_producto')
+            ->where('producto.categoria', 'Cuidado Capilar')
+            ->select('producto.*', 'imagen_producto.direccion_imagen')
+            ->get();
+        
+        return view('CuidadoCapilar', ['productos' => $productosCuidadoCapilar]);
+    }
+
+    public function mostrarCatalogoFragancia() {
+        $productosFragancia = DB::table('producto')
+            ->join('imagen_producto', 'producto.id_imagen_producto', '=', 'imagen_producto.id_imagen_producto')
+            ->where('producto.categoria', 'Perfume')
+            ->select('producto.*', 'imagen_producto.direccion_imagen')
+            ->get();
+        
+        return view('Fragancia', ['productos' => $productosFragancia]);
+    }
     public function mostrarDetalleProducto($id) {
         $producto = DB::table('producto')
             ->join('imagen_producto', 'producto.id_imagen_producto', '=', 'imagen_producto.id_imagen_producto')
