@@ -5,5 +5,5 @@
 
 <div class="contenedor_edit">
     
-    <a href="editarPerfil" class="editar_cuenta">Editar información</a>
+    <a href="{{ url('/perfilUsuario/editarPerfil/' . $user->id) }}" class="editar_cuenta">Editar información</a>
 </div>

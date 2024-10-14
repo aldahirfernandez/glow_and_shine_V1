@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\editarUsuarioController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\perfilUsuarioController;
 
@@ -15,11 +16,13 @@ use App\Http\Controllers\perfilUsuarioController;
 |
 */
 
-Route::get('/',[perfilUsuarioController::class, 'perfilUsuario']);
+Route::get('/perfilUsuario',[perfilUsuarioController::class, 'perfilUsuario']);
+
+Route::get('/perfilUsuario/editarPerfil/{id}',[editarUsuarioController::class, 'editar_perfil_usuario']);
+
+Route::get('/perfilUsuario/{id}', [perfilUsuarioController::class, 'recuperar_info']);
 
 
-
-Route::get('/editarPerfil',[perfilUsuarioController::class, 'editar_perfil_usuario']);
 
 Route::get('/p',[perfilUsuarioController::class, 'p']);
 

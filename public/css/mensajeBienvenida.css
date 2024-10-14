@@ -11,14 +11,14 @@
 }
 .encabezado_B{
     color: #601A55;
-    font-size: 1rem;
+    font-size: 1.5rem;
     font-family: 'Poppins', semi-bold;
     
     
 }
 .mensaje_B{
     color: #601A55;
-    font-size: 15px;
+    font-size: 16px;
     font-family: 'Poppins', Regular;
     text-align: justify;
     padding-left: 2rem;

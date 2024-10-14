@@ -1,4 +1,4 @@
-.form_registro{
+.container_form_registro{
     
     width: 90%;
     min-width: 352px;  
@@ -37,8 +37,8 @@
 
 .boton_guardar_cambios{
     background-color: #764C73;
-    width: 100%;
-    min-width: 315px;
+    width: 30%;
+    min-width: 305px;
     max-width: 580px;
     height: 2.8rem;
     
@@ -58,3 +58,18 @@
     background-color: #C9A8CB ;
 }
 
+@media (min-width: 1024px) {
+    .form_editar_info {
+        flex-direction: row; /* Cambiar a filas */
+        flex-wrap: wrap; /* Permitir el ajuste en más de una fila */
+        justify-content: space-between;
+    }
+
+    .edit_info {
+        width: 48%; /* Hacer los inputs ocupen el 48% del ancho para que haya espacio entre ellos */
+    }
+
+    .boton_guardar_cambios {
+        width: 100%; /* El botón sigue ocupando toda la fila */
+    }
+}
