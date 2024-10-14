@@ -31,7 +31,7 @@ Route::group(['prefix' => 'account'], function(){
         Route::get('logout', [LoginController::class,'logout'])->name('account.logout');
         Route::get('dashboard', [DashboardController::class,'index'])->name('account.dashboard');
         Route::get('dashboardAdmin',[DashboardController::class,'indexx'])->name('account.dashboardAdmin');
-
+        Route::get('dashboardEmpleado',[DashboardController::class,'indexxx'])->name('account.dashboardEmpleado');
     });
 
 });
