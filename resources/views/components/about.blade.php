@@ -5,59 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GLOWYS</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="{{ asset('css/about.css') }}">
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #fdf2f8;
-        }
-        .container {
-            width: 80%;
-            margin: 0 auto;
-        }
-        .section {
-            display: flex;
-            align-items: center; /* Centra verticalmente los elementos */
-            justify-content: space-between; /* Espacio entre imagen y texto */
-            margin: 20px 0;
-            padding: 20px;
-            background-color: #fff;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-        .section img {
-            max-width: 40%; /* El tamaño de la imagen ocupará el 40% del contenedor */
-            height: auto;
-            border-radius: 8px;
-        }
-        .section-content {
-            max-width: 55%; /* El texto ocupará el 55% del contenedor */
-        }
         
-        h2 {
-            color: #d63384;
-        }
-        p {
-            color: #6c757d;
-        }
-        .icon {
-            font-size: 24px;
-            margin-right: 8px;
-            color: #d63384;
-        }
-        @media (max-width: 768px) {
-            /* Para pantallas pequeñas o móviles, la imagen y el texto se colocan uno debajo del otro */
-            .section {
-                flex-direction: column;
-                text-align: center;
-            }
-            .section img {
-                max-width: 80%;
-                margin-bottom: 15px;
-            }
-            .section-content {
-                max-width: 100%;
-            }
-        }
     </style>
 </head>
 <body>
