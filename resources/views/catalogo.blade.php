@@ -14,9 +14,9 @@
 <body>
     <x-app-layout>
         <div class="contenedor_catalogo">
-            <x-TSubtitle>
+            <x-Aldahir.TSubtitle>
                 <span>★</span> MAQUILLAJE <span>★</span>
-            </x-TSubtitle>
+            </x-Aldahir.TSubtitle>
             <div class="contenedor_catalogo_productos">
                 @foreach($productos as $producto)
                 <x-Mikaela.tarjetaProducto :producto="$producto" />
