@@ -6,7 +6,8 @@
 <div class="encabezado_p">
     
     <h1 class="saludo">
-        HOLA CAMILA
+        {{$saludo}} 
+    <!-- HOLA CAMILA -->
     </h1>
     <!-- <p class="cerrar_s"> cerrar sesión</p> -->
 </div>

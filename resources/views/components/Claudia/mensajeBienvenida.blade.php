@@ -5,15 +5,16 @@
 
 <div class="mensaje_contenedor">
     <h1 class="encabezado_B">
-        ¡Bienvenida, Camila!
+        ¡<!-- Bienvenida, Camila! -->
+        ¡Bienvenid@!
     </h1>
     <p class="mensaje_B">
-    
-    Nos alegra que formes parte de nuestra 
+    {{$mensajeB}}
+    <!-- Nos alegra que formes parte de nuestra 
     comunidad. Este es tu espacio personal, 
     donde podrás añadir tu información, 
     explorar nuestros productos y más. 
-    ¡Disfruta de la experiencia!
+    ¡Disfruta de la experiencia! -->
 
     </p>
 </div>
