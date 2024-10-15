@@ -77,9 +77,9 @@
         <div class="">
 
             <div class="">
-                <x-header />
+             
                 <x-about />
-                <x-footer />
+      
 
             </div>
         </div>
