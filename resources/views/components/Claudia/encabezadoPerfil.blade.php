@@ -8,5 +8,4 @@
     <h1 class="saludo">
         {{$saludo}} {{ $user->name }}
     </h1>
-    <a class="cerrar_s" href="{{route('account.logout')}}">Cerrar Sesión</a> 
 </div>

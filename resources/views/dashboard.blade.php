@@ -1,30 +1,12 @@
+<link rel="stylesheet" href="{{ asset('css/perfilUsuario.css') }}">
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Perfil</title>
-   
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-
-   <link rel="stylesheet" href="{{ asset('css/perfilCuenta.css') }}">
-
-</head> 
-<body>
-
-<div class="pagina_perfil_cuenta">
-    <x-Claudia.encabezadoPerfil/>
-    <x-Claudia.botonesPerfil/>
-    <x-Claudia.mensajeBienvenida/>
-    <x-Claudia.informacionPerfil/>
-    <x-Claudia.editarPerfil/>
-    <x-Claudia.pieDePagina/>
-    
-</div>
-    
-</body>
-</html>
-
-
-
+<x-app-layout-sesion>
+    <section class="container_perfil_usuario">
+        <x-Claudia.encabezadoPerfil :saludo="$saludo" :user="$user"/>
+        <x-Claudia.mensajeBienvenida :mensajeB="$mensajeB" :user="$user"/>
+        <x-Claudia.informacionPerfilU :user="$user"/>
+        <x-Claudia.editarPerfil :user="$user"/>
+        <x-Claudia.listaDeseos/>
+        <x-Aldahir.CardSection/>
+    </section>
+</x-app-layout-sesion>

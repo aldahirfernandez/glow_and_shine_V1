@@ -44,7 +44,7 @@ Route::group(['prefix' => 'account'], function(){
 
 /* SECCION DE USUARIO - CLIENTE */
 
-/* Route::get('/perfilUsuario/editarPerfil/{id}',[editarUsuarioController::class, 'editar_perfil_usuario']); */
+Route::get('dashboard/editarPerfil/{id}',[editarUsuarioController::class, 'editar_perfil_usuario']); 
 
 /* SECCION DE EMPLEADO */
 
