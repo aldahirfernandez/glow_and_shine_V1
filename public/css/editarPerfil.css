@@ -1,5 +1,7 @@
 .contenedor_edit{
     width: 90%;
+   
+    /* max-width: 525px; */
     height: 30px;
     display: flex; 
     justify-content: end;

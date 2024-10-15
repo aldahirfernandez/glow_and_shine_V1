@@ -4,32 +4,33 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Auth;
+
 
 class perfilUsuarioController extends Controller
 {
-    //
-    
-
-    public function recuperar_info($id) // Recibir el ID del usuario
+    public function recuperar_info($id)
     {
-        // Recuperar el usuario específico
+        if (Auth::user()->role !== 'cliente') {
+            return redirect()->route('account.dashboard')->with('error', 'Acceso denegado.');
+        }
+
         $user = DB::table('users')->where('id', $id)->first();
 
-        // Verificar si el usuario existe
         if (!$user) {
-            return redirect('/users')->with('error', 'Usuario no encontrado');
+            return redirect()->route('account.dashboard')->with('error', 'Usuario no encontrado');
         }
-        $saludo = 'Perfil de';
-        $mensajeB = 'Nos alegra que formes parte de nuestra 
-        comunidad. Este es tu espacio personal, 
-        donde podrás añadir tu información, 
-        explorar nuestros productos y más. 
-        ¡Disfruta de la experiencia!';
 
-        // Pasar los datos a la vista
-        return view('perfilUsuario', compact('user','saludo','mensajeB'));
+        $saludo = 'Perfil de Empleado';
+        $mensajeB = 'Nos alegra que formes parte de nuestro 
+        equipo. Este es tu espacio personal, donde podrás gestionar 
+        tu información, acceder a recursos que te ayudaran a cumplir 
+        con tus tareas. ¡Estamos emocionados de tenerte con nosotros 
+        y esperamos que disfrutes de tu experiencia aquí!';
+
+        return view('dashboard', compact('user', 'saludo', 'mensajeB'));
+        dd(compact('user', 'saludo', 'mensajeB'));
     }
-    
 
     
 

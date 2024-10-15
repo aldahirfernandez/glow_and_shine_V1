@@ -14,38 +14,33 @@ class LoginController extends Controller
         return view('login');
     }
 
-    public function authenticate(){
+    public function authenticate() {
         $validator = Validator::make(request()->all(), [
             'email' => 'required|email',      
             'password' => 'required'          
         ]);
-        if($validator->passes())
-        {
-        if (Auth::attempt(['email' => request() ->email, 'password' =>request()->password])) {
-
-            if(request() -> user()->role === 'admin')
-            {
-                return redirect()->intended(route('account.dashboardAdmin'));
-            }
-            else
-            {
-                if(request() -> user()->role === 'empleado')
-                {
-                    return redirect()->intended(route('account.dashboardEmpleado'));
+    
+        if ($validator->passes()) {
+            if (Auth::attempt(['email' => request()->email, 'password' => request()->password])) {
+                $user = request()->user();
+    
+                if ($user->role === 'admin') {
+                    return redirect()->intended(route('account.dashboardAdmin', ['id' => $user->id]));
+                } elseif ($user->role === 'empleado') {
+                    return redirect()->intended(route('account.dashboardEmpleado', ['id' => $user->id]));
                 }
-                return redirect()->intended(route('account.dashboard', absolute: false));
+    
+                return redirect()->intended(route('account.dashboard',['id' => $user->id]));
+            } else {
+                return redirect()->route('account.login')->with('error', 'Email o password incorrectos');
             }
-           
-                }else{
-                    return redirect()->route('account.login')->with('Email o password incorrectos');
-                }
-
-        }else{
+        } else {
             return redirect()->route('account.login')
-            ->withInput()
-            ->withErrors($validator);
-}
+                ->withInput()
+                ->withErrors($validator);
+        }
     }
+    
 
     public function register(){
       

@@ -4,20 +4,23 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Auth;
+
 
 class perfilEmpleadoController extends Controller
 {
-    //
-    
-    public function recuperar_info_empleado($id) // Recibir el ID del usuario
+    public function recuperar_info_empleado($id)
     {
-        // Recuperar el usuario específico
+        if (Auth::user()->role !== 'empleado') {
+            return redirect()->route('account.dashboard')->with('error', 'Acceso denegado.');
+        }
+
         $user = DB::table('users')->where('id', $id)->first();
 
-        // Verificar si el usuario existe
         if (!$user) {
-            return redirect('/users')->with('error', 'Usuario no encontrado');
+            return redirect()->route('account.dashboard')->with('error', 'Usuario no encontrado');
         }
+
         $saludo = 'Perfil de Empleado';
         $mensajeB = 'Nos alegra que formes parte de nuestro 
         equipo. Este es tu espacio personal, donde podrás gestionar 
@@ -25,8 +28,7 @@ class perfilEmpleadoController extends Controller
         con tus tareas. ¡Estamos emocionados de tenerte con nosotros 
         y esperamos que disfrutes de tu experiencia aquí!';
 
-        // Pasar los datos a la vista
-        return view('perfilEmpleado', compact('user','saludo','mensajeB'));
+        return view('dashboardEmpleado', compact('user', 'saludo', 'mensajeB'));
+        dd(compact('user', 'saludo', 'mensajeB'));
     }
-    
 }

@@ -9,7 +9,5 @@
     </h1>
     <p class="mensaje_B">
         {{$mensajeB}}
-    
-
     </p>
 </div>
