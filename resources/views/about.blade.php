@@ -43,8 +43,6 @@
                 <img src="{{ asset('images/imageB2.jpg') }}" alt="Descripción">
             </div>
         </div>
-
-
     </x-app-layout>
 
 </body>
