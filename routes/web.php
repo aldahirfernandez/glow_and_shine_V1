@@ -13,3 +13,8 @@ Route::get('/CuidadoCapilar', [catalogoController::class, 'mostrarCatalogoCuidad
 Route::get('/Fragancia', [catalogoController::class, 'mostrarCatalogoFragancia']);
 
 Route::get('/producto/{id}', [catalogoController::class, 'mostrarDetalleProducto']);
+
+Route::get('/about', function () {
+    return view('about');
+});
+

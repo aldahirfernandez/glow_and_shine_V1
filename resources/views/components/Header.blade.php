@@ -28,7 +28,7 @@
             <div class="logo"><a href="#">Glow and Shine</a></div>
             <ul class="links">
                 <li><a href="hero">Inicio</a></li>
-                <li><a href="about">Nosotros</a></li>
+                <li><a href="/about">Nosotros</a></li>
                 <li><a href="category">Categoria</a></li>
                 <li><a href="contact">Contactanos</a></li>
             </ul>
