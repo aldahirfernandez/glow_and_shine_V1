@@ -20,7 +20,7 @@ class catalogoController extends Controller
     public function mostrarCatalogoJoyeria() {
         $productosJoyeria = DB::table('producto')
             ->join('imagen_producto', 'producto.id_imagen_producto', '=', 'imagen_producto.id_imagen_producto')
-            ->where('producto.categoria', 'Joyeria')
+            ->where('producto.categoria', 'Joyería')
             ->select('producto.*', 'imagen_producto.direccion_imagen')
             ->get();
         
