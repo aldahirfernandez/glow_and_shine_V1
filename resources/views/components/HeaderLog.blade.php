@@ -28,7 +28,7 @@
             <div class="logo"><a href="#">Glow and Shine</a></div>
             <ul class="links">
                 <li><a href="../">Inicio</a></li>
-                <li><a href="about">Nosotros</a></li>
+                <li><a href="../about">Nosotros</a></li>
                 <li><a href="category">Categoria</a></li>
                 <li><a href="../contactanos">Contactanos</a></li>
             </ul>
@@ -38,10 +38,10 @@
         </div>
 
         <div class="dropdown_menu">
-            <li><a href="hero">Inicio</a></li>
-            <li><a href="about">Nosotros</a></li>
+            <li><a href="../">Inicio</a></li>
+            <li><a href="../about">Nosotros</a></li>
             <li><a href="category">Categoria</a></li>
-            <li><a href="contact">Contactanos</a></li>
+            <li><a href="../contactanos">Contactanos</a></li>
         </div>
     </header>
 

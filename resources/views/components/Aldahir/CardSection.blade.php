@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="{{ asset('css/CardSection.css') }}">
+    <link rel="stylesheet" href="/css/CardSection.css">
     <title>Document</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,6 +16,9 @@
 <body>
     <div class="product_card">
         
+        <!--<div class="discount_badge">
+            16% OFF
+        </div>-->
        
         <div class="product_image">
             <img src="https://bolishop.bo/wp-content/uploads/2022/07/SKY-HIGHMesa-de-trabajo-1.jpg" alt="Agua Micelar Charcoal 400ML - Garnier Skin Active">
@@ -30,6 +33,7 @@
             <span class="original_price">$165.00</span>
         </div>
     
+        
         
     </div>
     

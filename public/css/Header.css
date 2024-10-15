@@ -74,7 +74,7 @@ header {
     top: 60px;
     height: 0;
     width: 300px;
-    background: rgba(255, 255, 255, 0.1);
+    background: var(--Rosado_principal);
     backdrop-filter: blur(15px);
     border-radius: 8px;
     overflow: hidden;
@@ -90,6 +90,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
+    border-bottom:white 2px solid ;
 }
 
 .dropdown_menu .action_btn {

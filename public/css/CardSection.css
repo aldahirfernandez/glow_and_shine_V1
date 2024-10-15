@@ -1,7 +1,5 @@
-
 .product_card {
-    /*flex: 0 0 auto;*/
-
+    flex: 0 0 auto;
     position: relative;
     background-color: white;
     width: 300px;
@@ -10,19 +8,18 @@
     border-radius: 8px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     transition: filter 0.3s ease;
-    margin: 20px;
+    margin-top: 15px;
 }
 
 .product_card:hover {
     filter: brightness(0.8);
 }
 
-
 .discount_badge {
     position: absolute;
     top: 10px;
     right: 10px;
-    background: linear-gradient(135deg, #ff416c, #ff4b2b);
+    background: linear-gradient(135deg, var(--Rosado_Fuerte), var(--Morado));
     color: white;
     padding: 5px 10px;
     font-size: 0.9rem;
@@ -57,7 +54,7 @@
 
 .current_price {
     font-size: 1.2rem;
-    color: #ff4b2b;
+    color: var(--Rosado_Fuerte);
     font-weight: bold;
 }
 

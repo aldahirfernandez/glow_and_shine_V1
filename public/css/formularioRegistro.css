@@ -42,3 +42,9 @@
     margin: 0;
 }
 
+@media (max-width: 600px) {
+    .formulario_registro
+    {
+        width: 90%;
+    }
+}

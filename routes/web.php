@@ -14,10 +14,20 @@ use App\Http\Controllers\editarUsuarioController;
 
 
 Route::get('/', [HomeController::class, 'principal']);
-
 Route::view('/contactanos', 'contactanos');
-Route::get('/catalogo', [catalogoController::class, 'mostrarCatalogoMaquillaje']);
+Route::get('/Skincare', [catalogoController::class, 'mostrarCatalogoSkinCare']);
+Route::get('/Maquillaje', [catalogoController::class, 'mostrarCatalogoMaquillaje']);
+Route::get('/Joyeria', [catalogoController::class, 'mostrarCatalogoJoyeria']);
+Route::get('/CuidadoCapilar', [catalogoController::class, 'mostrarCatalogoCuidadoCapilar']);
+Route::get('/Fragancia', [catalogoController::class, 'mostrarCatalogoFragancia']);
+
 Route::get('/producto/{id}', [catalogoController::class, 'mostrarDetalleProducto']);
+
+Route::get('/about', function () {
+    return view('about');
+});
+
+
 
 
 Route::group(['prefix' => 'account'], function(){

@@ -1,19 +1,13 @@
-* {
-    box-sizing: border-box;
-}
-
-body {
-    font-family: 'Poppins', sans-serif;
-}
-
 .container_card {
-    background-color: #764C73;
+    flex: 0 0 auto;
+
+    background-color: var(--Morado);
     max-width: 600px;
     padding: 20px;
 }
 
 .review_card {
-    background-color: rgb(232, 232, 232);
+    background-color: var(--Blanco);
     border-radius: 8px;
     display: flex;
     align-items: center;

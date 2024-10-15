@@ -9,18 +9,12 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    /*padding: 5px;*/
-    transition: filter 0.3s ease;
+    margin-top: 15px;
 }
 
-.container_card_brand:hover {
-    filter: brightness(0.8);
-}
 
 .container_card_brand img {
     width: 100%;
     height: auto;
-    aspect-ratio: 1/1;
-   
-    box-shadow: 0 2px 10px rgba(37, 10, 10, 0.2);
+    /*aspect-ratio: 1/1;*/
 }

@@ -1,14 +1,11 @@
 .container_button {
-    padding: 0;
-    margin-top: 5px;
+    margin-top: 40px;   
 }
 
 .my_button {
-    background-color: #764C73; /* Fondo azul */
-    color: white; /* Texto blanco */
-    padding: 12px 24px; /* Padding */
-    font-size: 1rem; /* Tamaño de la fuente */
-    font-family: 'Poppins', sans-serif; /* Fuente personalizada */
+    background-color: var(--Morado); 
+    padding: 12px 24px; 
+    font-size: 1rem; 
     border: 2px solid transparent; /* Borde transparente */
     border-radius: 50px; /* Bordes completamente redondeados */
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Sombra para dar profundidad */
@@ -22,14 +19,15 @@
 }
 
 .my_button:hover {
-    background-color: #C9A8CB; /* Cambiar color al hacer hover */
+    background-color: #c26abc; 
+    color: var(--Blanco);
     box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3); /* Cambiar la sombra */
     border: 2px solid #C9A8CB; /* Agregar un borde azul en hover */
     transform: translateY(-3px); /* Eleva el botón ligeramente */
 }
 
 .my_button:active {
-    background-color: #764C73; /* Mantener el color en el clic */
+    background-color: var(--Morado); /* Mantener el color en el clic */
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Reducir la sombra */
     transform: translateY(0); /* Volver a la posición original */
 }

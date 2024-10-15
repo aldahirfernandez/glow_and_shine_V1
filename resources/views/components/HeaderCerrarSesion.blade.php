@@ -27,10 +27,10 @@
         <div class="navbar">
             <div class="logo"><a href="#">Glow and Shine</a></div>
             <ul class="links">
-                <li><a href="hero">Inicio</a></li>
-                <li><a href="about">Nosotros</a></li>
+                <li><a href="../">Inicio</a></li>
+                <li><a href="../about">Nosotros</a></li>
                 <li><a href="category">Categoria</a></li>
-                <li><a href="contact">Contactanos</a></li>
+                <li><a href="../contactanos">Contactanos</a></li>
             </ul>
             <div>
                 <a class="action_btn" href="{{route('account.logout')}}">Cerrar Sesión</a>
@@ -42,10 +42,10 @@
         </div>
 
         <div class="dropdown_menu">
-            <li><a href="hero">Inicio</a></li>
-            <li><a href="about">Nosotros</a></li>
+            <li><a href="../">Inicio</a></li>
+            <li><a href="../about">Nosotros</a></li>
             <li><a href="category">Categoria</a></li>
-            <li><a href="contact">Contactanos</a></li>
+            <li><a href="../contactanos">Contactanos</a></li>
             <li> <a class="action_btn" href="{{route('account.logout')}}">Cerrar Sesión</a> </li>
             <!-- <li><a href="#" class="action_btn">Registrarse</a></li> -->
         </div>

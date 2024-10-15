@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,11 +10,21 @@
     <link rel="stylesheet" href="{{ asset('css/producto.css') }}">
     <title>{{ $producto->nombre }}</title>
 </head>
+
 <body>
-    <!-- <x-imagenProducto/> -->
-    <x-imagenProducto :producto="$producto"/>
-    <x-nombreProductoConBoton :producto="$producto" />
-    <x-seleccionarTonos :producto="$producto"/>
-    <x-calificaProducto/>
+    <x-app-layout>
+        <div class="contenedor_total_producto">
+            <div class="contenedor_detalle_producto">
+                <x-imagenProducto :producto="$producto" />
+                <div class="contenedor_informacion_producto">
+                    <x-Mikaela.nombrePrecio :producto="$producto" />
+                    <x-Mikaela.informacionProducto :producto="$producto" />
+                    <x-Mikaela.botonAnadirListaDeseos />
+                </div>
+            </div>
+            <x-Mikaela.calificaProducto />
+        </div>
+    </x-app-layout>
 </body>
+
 </html>

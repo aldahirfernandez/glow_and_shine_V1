@@ -1,15 +1,21 @@
 .container_button_round {
     flex: 0 0 auto;
-
     width: 25%; 
     max-width: 160px; 
     border-radius: 10px; 
     overflow: hidden; /* Oculta cualquier contenido que sobresalga */
-    display: flex; /* Usa Flexbox para alinear elementos */
-    flex-direction: column; /* Coloca los elementos en columna */
+    display: flex; 
+    flex-direction: column; 
     justify-content: center; /* Centra los elementos verticalmente */
     align-items: center; /* Centra los elementos horizontalmente */
     padding: 10px; /* Espacio interno para el contenedor */
+}
+
+.container_button_round a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .container_button_round img {
@@ -37,7 +43,6 @@
     font-weight: 600;
     text-align: center;
     margin-top: 5px;
-
 }
 
 

@@ -47,6 +47,7 @@ footer{
     line-height: 1.4rem;
     padding-bottom: 1rem;
     color: var(--Morado);
+    text-align: justify;
 }
 
 .redes-sociales{
